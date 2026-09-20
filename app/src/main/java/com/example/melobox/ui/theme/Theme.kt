@@ -52,7 +52,7 @@ fun MeloBoxTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = MeloBoxTypography,
         content = content
     )
 }

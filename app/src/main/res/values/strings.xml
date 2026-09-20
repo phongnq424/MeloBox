@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MeloBox</string>
+    <string name="home_greeting_morning">Good morning</string>
+    <string name="notification">Notification</string>
+    <string name="open_profile">Open profile</string>
+    <string name="recent_played">Recent played</string>
+    <string name="for_you">For you</string>
 </resources>
