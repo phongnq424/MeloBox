@@ -13,7 +13,8 @@ class HomeViewModel : ViewModel() {
         HomeUiState(
             User(
                 id = 1,
-                userName = "Phong"
+                userName = "Phong",
+                avatar = "https://image.tmdb.org/t/p/w235_and_h235_face/wQRbqJdTargXqwUDooW7Bfw7gY5.jpg"
             ),
             recentlyPlayed = listOf(
                 Song(

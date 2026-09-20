@@ -22,6 +22,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import coil3.compose.AsyncImage
 import com.example.melobox.R
 import com.example.melobox.model.User
 import com.example.melobox.ui.theme.MeloBoxTheme
@@ -45,11 +46,12 @@ fun HomeHeader(
             Text(
                 text = stringResource(R.string.home_greeting_morning),
                 style = MaterialTheme.typography.bodyLarge,
-                fontWeight = FontWeight.Light
+                fontWeight = FontWeight.Normal
             )
             Text(
                 text = user?.userName?:"User",
-                style = MaterialTheme.typography.headlineSmall
+                style = MaterialTheme.typography.headlineMedium,
+                fontWeight = FontWeight.Medium
             )
         }
 
@@ -71,11 +73,15 @@ fun HomeHeader(
             IconButton(
                 onClick = onAvatarClick
             ) {
-                Image(
-                    painter = painterResource(R.drawable.ic_profile),
+                AsyncImage(
+                    model = user?.avatar,
                     contentDescription = stringResource(R.string.open_profile),
+                    fallback = painterResource(R.drawable.ic_profile),
+                    error = painterResource(R.drawable.ic_profile),
                     contentScale = ContentScale.Crop,
-                    modifier = Modifier.size(40.dp).clip(CircleShape)
+                    modifier = Modifier
+                        .size(40.dp)
+                        .clip(CircleShape)
                 )
 
             }

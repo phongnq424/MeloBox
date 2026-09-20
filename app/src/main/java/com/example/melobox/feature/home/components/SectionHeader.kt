@@ -18,9 +18,8 @@ fun SectionHeader(
         modifier = modifier
             .fillMaxWidth()
             .padding(
-                horizontal = 16.dp,
-                vertical = 8.dp
+                horizontal = 16.dp
             ),
-        style = MaterialTheme.typography.titleLarge
+        style = MaterialTheme.typography.titleMedium
     )
 }

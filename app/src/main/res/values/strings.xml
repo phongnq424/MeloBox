@@ -5,4 +5,5 @@
     <string name="open_profile">Open profile</string>
     <string name="recent_played">Recent played</string>
     <string name="for_you">For you</string>
+    <string name="search_songs">Search songs, artists, albums...</string>
 </resources>
